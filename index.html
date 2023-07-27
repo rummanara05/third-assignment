@@ -31,32 +31,45 @@
 <body>
     <header>
             <!-- Navbar Section -->
-           <nav class="max-w-screen-xl mx-auto">
-            <div class="navbar bg-[#F85559] border-0 rounded-full mt-10 text-white">
-                <div class="navbar-start">
-                  <div >
-                    
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 mb-2 z-[1] p-2 flex md:flex-row ">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="navbar-center">
-                    <img src="./images/logo.png" alt="">
-                  <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-                </div>
-                <div class="navbar-end">
-                    <input type="search" name="search here" id="" placeholder="Search Here" class="md: border-0 rounded-full w-[350px] h-[50px] pl-5">
-                  <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+           
+         <section class="max-w-screen-xl mx-auto mt-12">
+          <div class="navbar bg-[#F85559] text-white border-0 rounded-[600px]">
+            <div class="navbar-start">
+              <ul class="menu menu-horizontal hidden lg:flex">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+              <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+              <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <div class="form-control">
+                <div class="relative">
+                  <input type="text" placeholder="Search here" class=" rounded-3xl outline-none text-black py-2 px-7" />
+                  <button class="text-black text-xl absolute top-0 bottom-0 right-3">
+                    <span ><i class="fa-solid fa-magnifying-glass"></i></span>
                   </button>
-                  
                 </div>
-              </div>  
-            </nav>  
+              </div>
+            </div>
+          </div>
+         </section>
+            
     </header>
     <main>
 
@@ -70,7 +83,7 @@
                   <div id="slide1" class="carousel-item relative w-full">
                       <!-- hero -->
                       <div class="hero min-h-[550px]  " style="background-image: url(./images/banner2.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-overlay bg-black opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="max-w-3xl">
                             <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
@@ -91,7 +104,7 @@
                   <div id="slide2" class="carousel-item relative w-full">
                    
                     <div class="hero min-h-[550px] " style="background-image: url(./images/banner1.png);">
-                      <div class="hero-overlay bg-opacity-50"></div>
+                      <div class="hero-overlay bg-black opacity-60"></div>
                       <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-3xl">
                           <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
@@ -108,7 +121,7 @@
                   <div id="slide3" class="carousel-item relative w-full">
                     
                     <div class="hero min-h-[550px]" style="background-image: url(./images/banner3.png);">
-                      <div class="hero-overlay bg-opacity-50"></div>
+                      <div class="hero-overlay bg-black opacity-60"></div>
                       <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-3xl">
                           <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
@@ -142,7 +155,7 @@
                 </div>
   
               <!-- fruit position -->
-              <div class="max-w-screen-lg mx-auto bg-red-400 hidden  md:flex justify-around items-center p-5 ">
+              <div class="max-w-screen-lg mx-auto bg-white drop-shadow-lg rounded-lg relative -top-14 hidden  md:flex justify-around items-center p-5 ">
                 <div>
                   <img class="w-[100px] h-[75px]"  src="./images/fruit1.png" alt="">
                   <h4 class="text-base font-medium ml-6">Grapes</h4>
@@ -394,18 +407,21 @@
             <!-- meet the team section -->
            
             <section class="max-w-screen-xl mx-auto my-12 ">
-              <div class="hero h-[600px]" style="background-image: url(./images/team.png);">
-                <div class="hero-overlay bg-opacity-70"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="flex-col m-0 md:max-w-md text-center">
-                    <h1 class="mb-5 text-4xl font-extrabold -mt-48">Meet the team section</h1>
+              <div class="hero" style="background-image: url(./images/team.png);">
+                <div class="hero-overlay bg-black opacity-60"></div>
+                <div class="hero-content text-center text-white">
+                  <div class="py-14">
+                  <div class=" ">
+                    <h1 class="mb-5 text-4xl font-extrabold ">Meet the team section</h1>
                     <p class="mb-5 text-base font-medium mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                   </div>
-                </div>
+                
                   
                   <div class="flex flex-col md:flex-row justify-center mt-36 gap-14 text-white text-center ">
                   <div>
+                    <div class="flex justify-center">
                     <img class="w-[120px] h-[120px]" src="./images/member1.png" alt="">
+                  </div>
                     <h3 class="pt-6 text-xl font-bold">Awlad Hossain</h3>
                     <p>Fruits Expert</p>
                     <div class="text-[#F85559] mt-1"> <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -413,7 +429,9 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a></div>
                   </div>
                   <div>
+                    <div class="flex justify-center">
                     <img class="w-[120px] h-[120px]" src="./images/member2.png" alt="">
+                    </div>
                     <h3 class="pt-6 text-xl font-bold">Safia Chowdhury</h3>
                     <p>Fruits Expert</p>
                     <div class="text-[#F85559] mt-1"> <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -421,7 +439,9 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a></div>
                   </div>
                   <div>
+                    <div class="flex justify-center">
                     <img class="w-[120px] h-[120px]" src="./images/member3.png" alt="">
+                    </div>
                     <h3 class="pt-6 text-xl font-bold">Rokib Hossain</h3>
                     <p>Fruits Expert</p>
                     <div class="text-[#F85559] mt-1"> <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -429,16 +449,22 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a></div>
                   </div>
                   <div>
+                    <div class="flex justify-center">
                     <img class="w-[120px] h-[120px]" src="./images/member4.png" alt="">
+                    </div>
                     <h3 class="pt-6 text-xl font-bold">Chaity</h3>
                     <p>Fruits Expert</p>
                     <div class="text-[#F85559] mt-1"> <a href=""><i class="fa-brands fa-facebook"></i></a>
                       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a></div>
                   </div>
-                  </div>
+                </div>
+                  
                 </div>
               </div>
+              </div>
+            </div>
+
               
               
               
@@ -569,7 +595,7 @@
       </div> 
       <div>
         <div class="grid grid-flow-col gap-8">
-          <a><i class="fa-brands fa-square-twitter text-3xl"></i></a> 
+          <a href=""><i class="fa-brands fa-square-twitter text-3xl"></i></a> 
           <a href=""><i class="fa-brands fa-facebook text-3xl "></i></a>
             <a href=""><i class="fa-brands fa-youtube text-3xl"></i></a>
           <a href=""><i class="fa-brands fa-linkedin text-3xl"></i></a>
