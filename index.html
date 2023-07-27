@@ -33,7 +33,7 @@
             <!-- Navbar Section -->
            
          <section class="max-w-screen-xl mx-auto mt-12">
-          <div class="navbar bg-[#F85559] text-white border-0 rounded-[600px]">
+          <div class="navbar bg-[#F85559] text-white border-0 rounded-[600px] pt-5 pb-5">
             <div class="navbar-start">
               <ul class="menu menu-horizontal hidden lg:flex">
                 <li><a>Home</a></li>
@@ -57,11 +57,11 @@
               <img src="./images/logo.png" alt="">
               <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
             </div>
-            <div class="navbar-end hidden lg:flex">
+            <div class="navbar-end hidden md:flex lg:flex">
               <div class="form-control">
-                <div class="relative">
+                <div class="relative pr-6">
                   <input type="text" placeholder="Search here" class=" rounded-3xl outline-none text-black py-2 px-7" />
-                  <button class="text-black text-xl absolute top-0 bottom-0 right-3">
+                  <button class="text-black text-xl absolute top-0 bottom-0 right-9">
                     <span ><i class="fa-solid fa-magnifying-glass"></i></span>
                   </button>
                 </div>
@@ -155,7 +155,7 @@
                 </div>
   
               <!-- fruit position -->
-              <div class="max-w-screen-lg mx-auto bg-white drop-shadow-lg rounded-lg relative -top-14 hidden  md:flex justify-around items-center p-5 ">
+              <div class="max-w-screen-lg mx-auto bg-white drop-shadow-lg rounded-lg relative -top-16 hidden  md:flex justify-around items-center p-5 ">
                 <div>
                   <img class="w-[100px] h-[75px]"  src="./images/fruit1.png" alt="">
                   <h4 class="text-base font-medium ml-6">Grapes</h4>
@@ -189,7 +189,7 @@
                 </div>
                 <div>
                      <!-- countdown -->
-                     <div class="grid grid-flow-col  gap-5 text-center auto-cols-max lg:flex">
+                     <div class="grid grid-flow-col  gap-5 text-center auto-cols-max md:mr-6 lg:flex">
                         <div class="flex flex-col">
                           <span class="countdown font-mono text-5xl">
                             <span style="--value:29;"></span> 
@@ -230,7 +230,7 @@
 
                     <!-- cards -->
 
-            <div class="grid grid-cols-1 pl-16 md:grid-cols-2 lg:grid-cols-4 mt-12 ">
+            <div class="grid grid-cols-1 pl-16 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-4">
                <div class="text-center lg: w-[300px] h-[400px] border-2">
                 <img class="w-[90px] h-[90px] mt-16 ml-24" src="./images/fruit6.png" alt="">
                 <h3 class="text-xl font-bold mt-5">12.90$ - 18.85$</h3>
@@ -399,7 +399,8 @@
                 </span>
                </div>
             </div>
-            <button class="text-white text-xl font-bold bg-[#F85559] px-6 py-4 ml-40 lg:ml-[570px] my-14 border-0 rounded-lg">Shop All</button>
+                  <!-- shop all button -->
+            <button class="text-white text-xl font-bold bg-[#F85559] px-6 py-4 ml-40 md:ml-80 lg:ml-[570px] my-14 border-0 rounded-lg">Shop All</button>
             </section> 
 
           
@@ -413,7 +414,7 @@
                   <div class="py-14">
                   <div class=" ">
                     <h1 class="mb-5 text-4xl font-extrabold ">Meet the team section</h1>
-                    <p class="mb-5 text-base font-medium mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p class="mb-5 text-base font-medium mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                   </div>
                 
                   
@@ -472,16 +473,16 @@
 
             <!-- why choose us section-->
 
-      <section class=" lg:max-w-screen-xl mx-auto  mt-12 mb-12">
+      <section class=" max-w-screen-xl mx-auto  mt-20 mb-16">
         <div class="text-center">
-          <h1 class="text-4xl text-[#121212] font-extrabold">Why Choose Us</h1>
+          <h1 class="text-4xl text-[#121212] font-extrabold mb-2">Why Choose Us</h1>
           <p class="text-base font-normal mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-col lg:flex-row">
 
            <!-- 2nd column -->
-        <div class="flex-1 flex-col-reverse md:flex-1">
+        <div class="flex-1 flex-col-reverse  md:flex-1 ml-36 lg:ml-20">
           <img class="gap-4" src="./images/whychoose1.png" alt="">
         </div>
           
@@ -494,8 +495,8 @@
           </div>
           <div>
             
-              <h3 class="text-xl font-extrabold md:text-left mb-2">Dedicated Team</h3>
-              <hr class="w-[80px] h-2">
+              <h3 class="text-xl font-extrabold lg:text-left mb-2">Dedicated Team</h3>
+              <hr class="lg:w-[80px] h-2">
              
               <p class="text-sm font-medium md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
              
@@ -507,8 +508,8 @@
           </div>
           <div>
             
-              <h3 class="text-xl font-extrabold md:text-left mb-2">Fresh is Best</h3>
-              <hr class="w-[80px] h-2">
+              <h3 class="text-xl font-extrabold lg:text-left mb-2">Fresh is Best</h3>
+              <hr class="lg:w-[80px] h-2">
               <p class="text-sm font-medium md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
              
           </div>
@@ -519,23 +520,23 @@
           </div>
           <div>
             
-              <h3 class="text-xl font-extrabold md:text-left mb-2">Gift Certificates</h3>
-              <hr class="w-[80px] h-2">
-              <p class="text-sm font-medium md:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <h3 class="text-xl font-extrabold lg:text-left mb-2">Gift Certificates</h3>
+              <hr class="lg:w-[80px] h-2">
+              <p class="text-sm font-medium lg:text-left">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
              
           </div>
         </div>
       </div>
      
         <!-- 3rd column -->
-        <div class="flex-1 grid grid-cols-1 ">
+        <div class="flex-1 grid grid-cols-1 lg:mr-20 ml-10">
             
               <div class="flex flex-col-reverse text-center mt-6 lg:flex-row items-center  gap-4">
                 
-                <div class="text-center  md:text-right">
+                <div class="text-center  lg:text-right">
                   
-                    <h3 class="text-xl font-extrabold md:text-right mb-2">Integrated Supplier</h3>
-                    <hr class="w-[80px] h-2 ml-80">
+                    <h3 class="text-xl font-extrabold lg:text-right mb-2">Integrated Supplier</h3>
+                    <hr class=" lg:w-[80px] h-2 ml-60 ">
                     <p class="text-sm font-medium md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                    
                 </div>
@@ -545,11 +546,11 @@
               </div>
               <div class="flex flex-col-reverse text-center mt-6 lg:flex-row items-center  gap-4 ">
                 
-                <div class="text-center  md:text-right">
+                <div class="text-center  lg:text-right">
                   
-                    <h3  class="text-xl font-extrabold md:text-right mb-2">Sustainable Practice</h3>
-                    <hr class="w-[80px] h-2 ml-80">
-                    <p class="text-sm font-medium md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <h3  class="text-xl font-extrabold lg:text-right mb-2">Sustainable Practice</h3>
+                    <hr class="lg:w-[80px] h-2 ml-60">
+                    <p class="text-sm font-medium lg:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                    
                 </div>
                 <div>
@@ -560,9 +561,9 @@
                 
                 <div class="text-center md:text-right">
                   
-                    <h3  class="text-xl font-extrabold md:text-right mb-2">The Benefits Only</h3>
-                    <hr class="w-[80px] h-2 ml-80">
-                    <p class="text-sm font-medium md:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <h3  class="text-xl font-extrabold md:text-center lg:text-right mb-2">The Benefits Only</h3>
+                    <hr class="lg:w-[80px] h-2 ml-60">
+                    <p class="text-sm font-medium md:text-center lg:text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                    
                 </div>
                 <div>
@@ -580,6 +581,7 @@
       </section>
 
     </main>
+           <!-- footer section -->
     <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded text-white pt-28 pb-28">
       <div class="flex">
         <img src="./images/logo.png" alt="">
